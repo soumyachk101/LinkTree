@@ -1,10 +1,12 @@
 // Links Data
 const links = [
-    { id: 1, title: 'Portfolio', url: 'https://chksoumya.in' },
-    { id: 2, title: 'GitHub', url: 'https://github.com/soumyachk101' },
-    { id: 3, title: 'LinkedIn', url: 'https://www.linkedin.com/in/soumya-chakraborty-102b24399' },
-    { id: 4, title: 'LeetCode', url: 'https://leetcode.com/u/soumya-chk101/' },
-    { id: 5, title: 'HackerRank', url: 'https://www.hackerrank.com/profile/soumyachk7' },
+    { id: 1, title: 'Portfolio', url: 'https://chksoumya.in', icon: 'fas fa-globe' },
+    { id: 2, title: 'GitHub', url: 'https://github.com/soumyachk101', icon: 'fab fa-github' },
+    { id: 3, title: 'LinkedIn', url: 'https://www.linkedin.com/in/soumya-chakraborty-102b24399', icon: 'fab fa-linkedin-in' },
+    { id: 4, title: 'LeetCode', url: 'https://leetcode.com/u/soumya-chk101/', icon: 'fas fa-code' },
+    { id: 5, title: 'HackerRank', url: 'https://www.hackerrank.com/profile/soumyachk7', icon: 'fab fa-hackerrank' },
+    { id: 6, title: 'Instagram', url: 'https://www.instagram.com/soumya_chk', icon: 'fab fa-instagram' },
+    { id: 7, title: 'X / Twitter', url: 'https://x.com/soumyachk1', icon: 'fab fa-x-twitter' },
 ];
 
 const container = document.getElementById('links-container');
@@ -21,6 +23,7 @@ links.forEach((link, index) => {
     a.style.animation = `fadeIn 0.5s ease forwards ${index * 0.1 + 0.3}s`;
 
     a.innerHTML = `
+        <i class="${link.icon} link-icon"></i>
         <span class="link-text">${link.title}</span>
     `;
 
