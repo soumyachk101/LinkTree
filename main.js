@@ -5,9 +5,6 @@ const links = [
     { id: 3, title: 'LinkedIn', url: 'https://www.linkedin.com/in/soumya-chakraborty-102b24399', icon: 'fab fa-linkedin-in' },
     { id: 4, title: 'LeetCode', url: 'https://leetcode.com/u/soumya-chk101/', icon: 'fas fa-code' },
     { id: 5, title: 'HackerRank', url: 'https://www.hackerrank.com/profile/soumyachk7', icon: 'fab fa-hackerrank' },
-    { id: 6, title: 'Instagram', url: 'https://www.instagram.com/soumya_chk', icon: 'fab fa-instagram' },
-    { id: 7, title: 'X / Twitter', url: 'https://x.com/soumyachk1', icon: 'fab fa-x-twitter' },
-    { id: 8, title: 'WhatsApp', url: 'https://wa.me/qr/PAVVG4QPZUJXF1', icon: 'fab fa-whatsapp' },
 ];
 
 const container = document.getElementById('links-container');
