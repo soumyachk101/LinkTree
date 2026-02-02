@@ -8,32 +8,48 @@
   <link rel="icon" type="image/png" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <canvas id="canvas"></canvas>
 
-  <!-- Loading Screen -->
-  <div id="loading">
-    <div class="spinner"></div>
-    <p>Loading...</p>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="profile-header">
+      <div class="banner-image"></div>
+      <div class="profile-image-container">
+        <img src="logo.png" alt="Profile" class="profile-image">
+      </div>
+
+      <div class="profile-info">
+        <h1>Soumya Chakraborty</h1>
+        <p class="subtitle">DEVELOPER & CREATOR</p>
+      </div>
+
+      <!-- Social Icons Row -->
+      <div class="social-icons">
+        <a href="https://github.com/soumyachk101" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/soumya_chk" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/soumya-chakraborty-102b24399" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://x.com/soumyachk1" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </header>
+
+    <!-- Links Section -->
+    <div id="links-container">
+      <!-- Links will be populated by JS -->
+    </div>
+
+    <footer>
+      <p>BLOG</p>
+    </footer>
   </div>
 
-  <!-- 2D Overlay for Links -->
-  <div id="links-container"></div>
-
-  <!-- Scripts -->
-  <script type="importmap">
-    {
-        "imports": {
-            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-        }
-    }
-    </script>
   <script type="module" src="main.js"></script>
 </body>
 
