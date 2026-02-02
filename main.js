@@ -7,6 +7,7 @@ const links = [
     { id: 5, title: 'HackerRank', url: 'https://www.hackerrank.com/profile/soumyachk7', icon: 'fab fa-hackerrank' },
     { id: 6, title: 'Instagram', url: 'https://www.instagram.com/soumya_chk', icon: 'fab fa-instagram' },
     { id: 7, title: 'X / Twitter', url: 'https://x.com/soumyachk1', icon: 'fab fa-x-twitter' },
+    { id: 8, title: 'WhatsApp', url: 'https://wa.me/qr/PAVVG4QPZUJXF1', icon: 'fab fa-whatsapp' },
 ];
 
 const container = document.getElementById('links-container');
