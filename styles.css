@@ -181,8 +181,8 @@ body {
     backdrop-filter: blur(20px);
     border: 2px solid rgba(20, 184, 166, 0.2);
     border-radius: 50px;
-    padding: 12px 20px;
-    /* Reduced padding for cleaner look */
+    padding: 18px 32px;
+    /* Spacious padding for premium look */
     text-decoration: none;
     color: #0f766e;
     display: flex;
@@ -253,9 +253,9 @@ body {
 }
 
 .link-icon-wrapper {
-    width: 45px;
-    /* Slightly smaller for better proportion */
-    height: 45px;
+    width: 48px;
+    /* Optimized size */
+    height: 48px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--card-color), #14b8a6);
     display: flex;
