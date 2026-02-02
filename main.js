@@ -1,4 +1,3 @@
-// Links Data
 const links = [
     { id: 1, title: 'Portfolio', url: 'https://chksoumya.in', icon: 'fas fa-globe' },
     { id: 2, title: 'GitHub', url: 'https://github.com/soumyachk101', icon: 'fab fa-github' },
@@ -9,14 +8,12 @@ const links = [
 
 const container = document.getElementById('links-container');
 
-// Render Links
 links.forEach((link, index) => {
     const a = document.createElement('a');
     a.href = link.url;
     a.className = 'link-card';
     a.target = '_blank';
 
-    // Add staggered animation delay
     a.style.opacity = '0';
     a.style.animation = `fadeIn 0.5s ease forwards ${index * 0.1 + 0.3}s`;
 
@@ -28,7 +25,6 @@ links.forEach((link, index) => {
     container.appendChild(a);
 });
 
-// Add keyframes for fadeIn if not in CSS
 const style = document.createElement('style');
 style.innerHTML = `
     @keyframes fadeIn {
